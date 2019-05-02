@@ -1,0 +1,24 @@
+service: shk-im
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+
+  stage: production
+  region: ap-northeast-2
+
+plugins:
+  - serverless-nextjs-plugin
+  - serverless-prune-plugin
+
+custom:
+  serverless-nextjs:
+    nextConfigDir: "./"
+  prune:
+    automatic: true
+    number: 3
+
+package:
+  exclude:
+    - ./**
