@@ -6,17 +6,11 @@ const Home = () => (
       <title>shk.im</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <div className="block text-center">
-      <h1 className="block-title">
-        Serverless Demo
-        <span role="img" aria-label="lightning">
-          ⚡
-        </span>
-      </h1>
-      <p className="lead">
-        Powered by <a href="https://nextjs.org">next.js</a> +{" "}
-        <a href="https://serverless.com">serverless framework</a>
-      </p>
+    <div className="block py-2 text-center">
+      <div className="jumbotron">
+        <h1 className="display-4">SHK.IM</h1>
+        <p className="lead">The backbone of personal internet services.</p>
+      </div>
     </div>
   </>
 );

@@ -13,9 +13,9 @@ const Error = () => (
           🤔
         </span>
       </h1>
-      <p className="lead">에러가 발생했습니다.</p>
-      <Link>
-        <a className="btn btn-outline-primary" href="/">
+      <p className="lead">페이지를 찾을 수 없습니다.</p>
+      <Link href="/">
+        <a className="btn btn-outline-primary">
           메인으로 가기
         </a>
       </Link>
