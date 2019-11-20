@@ -2,7 +2,7 @@ service: shk-im
 
 provider:
   name: aws
-  runtime: nodejs10.x
+  runtime: nodejs12.x
   memorySize: 512
 
   stage: production
