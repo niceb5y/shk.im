@@ -1,24 +1,6 @@
-service: shk-im
-
-provider:
-  name: aws
-  runtime: nodejs12.x
-  memorySize: 512
-
-  stage: production
-  region: ap-northeast-2
-
-plugins:
-  - serverless-nextjs-plugin
-  - serverless-prune-plugin
-
-custom:
-  serverless-nextjs:
-    nextConfigDir: "./"
-  prune:
-    automatic: true
-    number: 3
-
-package:
-  exclude:
-    - ./**
+shkim:
+  component: serverless-next.js
+  inputs:
+    domain: "shk.im"
+    bucketName: "shk-im"
+    build: true

@@ -8,12 +8,13 @@
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0"
 	},
-	"devDependencies": {
-		"serverless-nextjs-plugin": "^2.4.2",
-		"serverless-prune-plugin": "^1.4.1"
-	},
 	"scripts": {
 		"dev": "next",
-		"deploy": "next build && sls deploy -s production"
+		"build": "next build",
+		"start": "next start",
+		"deploy": "sls"
+	},
+	"devDependencies": {
+		"serverless-next.js": "^1.6.1"
 	}
 }
