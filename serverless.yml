@@ -1,5 +1,5 @@
 shkim:
-  component: serverless-next.js
+  component: serverless-next.js@1.14.0
   inputs:
     domain: "shk.im"
     bucketName: "shk-im"
